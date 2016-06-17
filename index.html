@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  function searchClick(){
+  window.alert("hi...");
+  window.location="thanks.html";
+  }
+  </script>
+</head>
+<body>
+
+
+
+<div class="row" style="margin:15%;border-style: ridge;">
+
+<div class="row" style="vertical-align:middle">
+    
+     <div class="col-sm-12" id="polar area-chart" >
+        <div class="panel panel-default">
+        <div class="panel-heading" style="text-align:middle"><b>SEARCH</b></div>
+        
+      </div>
+    </div>
+</div>
+
+<div class="row" style="vertical-align:middle;margin:5px">
+    
+     <div class="col-lg-4 col-sm-12" id="polar area-chart" >
+       <div class="panel panel-default">
+            <div class="panel-heading"> <b>FILE SEARCH</b></div>
+             <div class="panel-body" style="height:20%">
+          <form action="thanks.html" method="post">
+ 	      <p>
+		  FILE SEARCH: <input type="text" name="svn" size="30" />
+	      </p>
+ 	   <input type="submit" value="SEARCH" class="upload" Onclick="searchClick()"/>
+	</form>
+        </div>
+        </div>
+    </div>
+	
+    <div class="col-lg-4 col-sm-12" id="base-chart" >
+         <div class="panel panel-default">
+            <div class="panel-heading"> <b>ADDRESS SEARCH</b></div>
+             <div class="panel-body" style="height:20%">
+          <form action="rest/file/svn" method="post">
+ 	      <p>
+		  ADDRESS SEARCH : <input type="text" name="svn" size="30" />
+	      </p>
+ 	   <input type="submit" value="SEARCH" class="upload" />
+	</form>
+        </div>
+        </div>
+     </div>
+	 
+	 <div class="col-lg-4 col-sm-12" id="base-chart" >
+        <div class="panel panel-default">
+            <div class="panel-heading"> <b>SERVICEABILITY</b></div>
+             <div class="panel-body" style="height:20%">
+          <form action="rest/file/svn" method="post">
+ 	      <p>
+		  SERVICEABILITY : <input type="text" name="svn" size="30" />
+	      </p>
+ 	   <input type="submit" value="SEARCH" class="upload" />
+	</form>
+        </div>
+        </div>
+     </div>
+</div>
+</div>
+</body>
+</html>
